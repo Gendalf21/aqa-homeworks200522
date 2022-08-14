@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+
+  postgresql:
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/postgresql
+    environment:
+      POSTGRES_USER: gendalf21
+      POSTGRES_PASSWORD: 1968017Gendalf
+      POSTGRES_DB: AlexDB
